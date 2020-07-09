@@ -26,3 +26,8 @@ export const warn = () =>
 hbs`
   <Button @label="Button" @type="warn" />
 `;
+
+export const accent = () =>
+hbs`
+  <Button @label="Button" @type="accent" />
+`;
