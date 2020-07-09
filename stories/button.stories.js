@@ -1,8 +1,6 @@
 import { hbs } from 'ember-cli-htmlbars';
 
 // <Button />
-// @label string
-// @type can be primary, warn, accent
 // @icon is the name if a mui icon
 // @disabled is the name if a mui icon
 // @fab is floating action button
@@ -30,4 +28,9 @@ hbs`
 export const accent = () =>
 hbs`
   <Button @label="Button" @type="accent" />
+`;
+
+export const icon = () => // TODO Fix this
+hbs`
+  <Button @label="Button" @type="accent" @icon="star_outline" />
 `;
