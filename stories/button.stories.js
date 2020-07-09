@@ -16,3 +16,8 @@ export const Default = () =>
 hbs`
   <Button @label="Button" />
 `;
+
+export const warn = () =>
+hbs`
+  <Button @label="Button" @type="warn" />
+`;
