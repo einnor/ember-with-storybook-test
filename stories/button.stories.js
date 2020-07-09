@@ -1,11 +1,5 @@
 import { hbs } from 'ember-cli-htmlbars';
 
-// <Button />
-// @icon is the name if a mui icon
-// @disabled is the name if a mui icon
-// @fab is floating action button
-// @raised boolean
-
 export default {
   title: 'Button',
 };
@@ -13,6 +7,16 @@ export default {
 export const Default = () =>
 hbs`
   <Button @label="Button" />
+`;
+
+export const flat = () =>
+hbs`
+  <Button @label="Button" @raised={{false}} />
+`;
+
+export const disabled = () =>
+hbs`
+  <Button @label="Button" @disabled={{true}} />
 `;
 
 export const primary = () =>
@@ -33,4 +37,9 @@ hbs`
 export const icon = () => // TODO Fix this
 hbs`
   <Button @label="Button" @type="accent" @icon="star_outline" />
+`;
+
+export const fab = () => // TODO Fix this
+hbs`
+  <Button @type="accent" @icon="star_outline" @fab={{true}} />
 `;
