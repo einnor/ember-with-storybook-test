@@ -17,6 +17,11 @@ hbs`
   <Button @label="Button" />
 `;
 
+export const primary = () =>
+hbs`
+  <Button @label="Button" @type="primary" />
+`;
+
 export const warn = () =>
 hbs`
   <Button @label="Button" @type="warn" />
